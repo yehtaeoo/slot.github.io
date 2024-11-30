@@ -13,23 +13,35 @@ spinButton.addEventListener('click', () => {
     if (balance >= 50000) {
         balance -= 50000;
         balanceDisplay.textContent = balance;
-        
-        const slot1 = getRandomSymbol();
-        const slot2 = getRandomSymbol();
-        const slot3 = getRandomSymbol();
 
-        reel1.textContent = slot1;
-        reel2.textContent = slot2;
-        reel3.textContent = slot3;
-
-        if (slot1 === slot2 && slot2 === slot3) {
-            balance += 1000000;
-            result.textContent = 'You Win!';
-        } else {
-            result.textContent = 'Try Again!';
-        }
+        // Add spin animation
+        reel1.style.transform = 'rotate(360deg)';
+        reel2.style.transform = 'rotate(360deg)';
+        reel3.style.transform = 'rotate(360deg)';
         
-        balanceDisplay.textContent = balance;
+        setTimeout(() => {
+            const slot1 = getRandomSymbol();
+            const slot2 = getRandomSymbol();
+            const slot3 = getRandomSymbol();
+            
+            reel1.textContent = slot1;
+            reel2.textContent = slot2;
+            reel3.textContent = slot3;
+            
+            reel1.style.transform = 'rotate(0deg)';
+            reel2.style.transform = 'rotate(0deg)';
+            reel3.style.transform = 'rotate(0deg)';
+            
+            if (slot1 === slot2 && slot2 === slot3) {
+                balance += 1000000;
+                result.textContent = 'You Win!';
+            } else {
+                result.textContent = 'Try Again!';
+            }
+            
+            balanceDisplay.textContent = balance;
+        }, 500);
+        
     } else {
         result.textContent = 'Not enough balance!';
     }
