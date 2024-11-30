@@ -1,16 +1,20 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #2e2e2e;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
     margin: 0;
     color: #fff;
 }
 
 .container {
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .top-bar {
@@ -18,7 +22,8 @@ body {
     justify-content: space-between;
     width: 100%;
     padding: 10px;
-    background-color: #444;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
 }
 
 .balance {
@@ -31,6 +36,12 @@ button {
     border: none;
     cursor: pointer;
     margin: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ffab76;
 }
 
 #buy-coins {
@@ -54,6 +65,8 @@ button {
     font-size: 2rem;
     background-color: #222;
     margin: 0 10px;
+    border-radius: 5px;
+    transition: transform 0.5s;
 }
 
 .controls {
