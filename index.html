@@ -8,21 +8,21 @@
 </head>
 <body>
     <div class="container">
-        <div class="top-bar">
-            <div class="balance">
+        <header>
+            <div class="balance-container">
                 <span>Balance: </span><span id="balance">1000000</span>
             </div>
             <button id="buy-coins">Buy Coins</button>
-        </div>
-        <div class="slot-machine">
-            <div class="reel" id="reel1">🍒</div>
-            <div class="reel" id="reel2">🍋</div>
-            <div class="reel" id="reel3">🔔</div>
-        </div>
-        <div class="controls">
-            <button id="spinButton">Spin</button>
+        </header>
+        <main>
+            <div class="slot-machine">
+                <div class="reel" id="reel1">🍒</div>
+                <div class="reel" id="reel2">🍋</div>
+                <div class="reel" id="reel3">🔔</div>
+            </div>
+            <button id="spinButton" class="spin-btn">Spin</button>
             <div id="result"></div>
-        </div>
+        </main>
     </div>
     <script src="script.js"></script>
 </body>
