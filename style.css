@@ -98,3 +98,30 @@ body {
     margin-top: 20px;
     font-size: 1.5rem;
 }
+
+@media (max-width: 600px) {
+    .top-bar, .bottom-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .slot-machine {
+        flex-direction: column;
+    }
+
+    .reel {
+        width: 80px;
+        height: 80px;
+        font-size: 2rem;
+        margin: 10px 0;
+    }
+
+    .button {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .balance, .level, .total-bet, .win {
+        font-size: 1.2rem;
+    }
+}
