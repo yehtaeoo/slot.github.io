@@ -8,21 +8,33 @@
 </head>
 <body>
     <div class="container">
-        <header>
-            <div class="balance-container">
-                <span>Balance: </span><span id="balance">1000000</span>
+        <header class="top-bar">
+            <div class="balance">
+                <span class="icon">💰</span><span id="balance">1,000,000,000</span>
             </div>
-            <button id="buy-coins">Buy Coins</button>
+            <button id="buy-coins" class="button">Buy Coins</button>
+            <div class="level">
+                <span class="icon">⭐</span><span>99</span>
+            </div>
         </header>
-        <main>
-            <div class="slot-machine">
-                <div class="reel" id="reel1">🍒</div>
-                <div class="reel" id="reel2">🍋</div>
-                <div class="reel" id="reel3">🔔</div>
-            </div>
-            <button id="spinButton" class="spin-btn">Spin</button>
-            <div id="result"></div>
+        <main class="slot-machine">
+            <div class="reel" id="reel1">🍒</div>
+            <div class="reel" id="reel2">🍋</div>
+            <div class="reel" id="reel3">🔔</div>
+            <div class="reel" id="reel4">⭐</div>
+            <div class="reel" id="reel5">🍉</div>
         </main>
+        <div class="bottom-bar">
+            <div class="total-bet">
+                <span>Total Bet:</span><span>750,000</span>
+            </div>
+            <button id="max-bet" class="button">Max Bet</button>
+            <button id="spinButton" class="button spin">Hold to Spin</button>
+            <div class="win">
+                <span>Win:</span><span>900,000,000</span>
+            </div>
+        </div>
+        <div id="result"></div>
     </div>
     <script src="script.js"></script>
 </body>
