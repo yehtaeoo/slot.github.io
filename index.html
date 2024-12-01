@@ -25,13 +25,18 @@
             <div class="reel" id="reel5">🍉</div>
         </main>
         <div class="bottom-bar">
-            <div class="total-bet">
-                <span>Total Bet:</span><span>750,000</span>
+            <div class="bet-controls">
+                <button class="bet-button" id="bet-minus">-</button>
+                <div class="total-bet">
+                    <span>Total Bet:</span><span id="total-bet">6,000,000,000</span>
+                </div>
+                <button class="bet-button" id="bet-plus">+</button>
             </div>
-            <button id="max-bet" class="button">Max Bet</button>
-            <button id="spinButton" class="button spin">Hold to Spin</button>
+            <button id="max-bet" class="button">MAX BET</button>
+            <button id="spinButton" class="button spin">SPIN</button>
+            <button id="stopButton" class="button stop">STOP</button>
             <div class="win">
-                <span>Win:</span><span>900,000,000</span>
+                <span>WIN:</span><span id="win">1,000,000</span>
             </div>
         </div>
         <div id="result"></div>
