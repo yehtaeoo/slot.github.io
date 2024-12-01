@@ -15,7 +15,7 @@ body {
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    width: 80%;
+    width: 90%;
     max-width: 800px;
 }
 
@@ -83,14 +83,40 @@ body {
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
+    margin-top: 20px;
 }
 
-.total-bet, .win {
+.bet-controls {
+    display: flex;
+    align-items: center;
+}
+
+.bet-button {
+    background-color: #ff5733;
+    color: #fff;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.bet-button:hover {
+    background-color: #ff7961;
+}
+
+.total-bet {
     font-size: 1.5rem;
 }
 
 .spin {
     background-color: #007bff;
+    color: #fff;
+}
+
+.stop {
+    background-color: #dc3545;
     color: #fff;
 }
 
@@ -116,7 +142,7 @@ body {
         margin: 10px 0;
     }
 
-    .button {
+    .button, .bet-button {
         padding: 10px;
         font-size: 0.9rem;
     }
